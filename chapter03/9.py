@@ -6,6 +6,7 @@ end = end_time
 date_end = datetime.datetime.strptime(str(end), '%H%M')
 dateformat = "%H시%M분"
 tmp_end = date_end.strftime(dateformat)
+date_to_compare = datetime.datetime.strptime(str(end), "%H%M")
 
 print(tmp_end, '\n')
 
@@ -16,6 +17,6 @@ dateformat = "%H시%M분"
 tmp_cur = date_cur.strftime(dateformat)
 
 
-elap_time = date_cur + datetime.timedelta(days=777)
-print(elap_time)
+elap_time = date_to_compare - date_cur 
 
+print("{}시간 {}분".format(int((elap_time).seconds / 3600), int(((elap_time).seconds % 3600) / 60)))
