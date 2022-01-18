@@ -23,6 +23,6 @@ while i != 'end':
 
     elap_time = date_cur - date_start  
     rem_time = date_end - date_cur
-    print("cur_time : {} | elap_time : {}시간 {}분 | rem_time : {}시간 {}분".format(tmp_cur, int((elap_time).seconds / 3600), int(((elap_time).seconds % 3600) / 60), int((rem_time).seconds / 3600), int(((rem_time).seconds % 3600) / 60)))
+    print("cur_time : {} || elap_time : {}시간 {}분 || rem_time : {}시간 {}분".format(tmp_cur, int((elap_time).seconds / 3600), int(((elap_time).seconds % 3600) / 60), int((rem_time).seconds / 3600), int(((rem_time).seconds % 3600) / 60)))
 
     i = input("")
